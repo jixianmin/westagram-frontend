@@ -1,8 +1,12 @@
 body {
     background-color: #d6d6d6;
+    /* height: 100%;
     display: flex;
-    align-items: center;
+    align-items: center; */
+    height: 100vh;
+    /* display: flex;  */
 }
+
 #Wrapper {
     display: flex;
     flex-direction: column;
