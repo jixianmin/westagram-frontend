@@ -4,34 +4,57 @@ body {
     display: flex;
     align-items: center; */
     height: 100vh;
-    /* display: flex;  */
+    display: flex;
 }
-
 #Wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: white;
     width: 350px;
+    height: 400px;
     margin: auto;
+    position: relative;
 }
 #Westagram {
     font-family: 'Lobster', cursive;
-    font-size: 35px;
+    font-size: 40px;
+    margin:50px auto 50px auto;
 }
-input {
+#idInput, #passwordInput {
     box-sizing: border-box;
     width: 268px;
     height: 36px;
     border-radius: 5px;
     border: 1px solid #d5d5d5;
+    margin-bottom: 5px;
+    font-size: 9px;
+    padding-left: 10px;
 }
-button {
+#loginButton {
     width: 268px;
     height: 30px;
     color: white;
     background-color: rgb(162, 224, 255);
     border: none;
     border-radius: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+a:link { 
+    color:white;
+    text-decoration: none;
+}
+a:visited {
+    color : white;
+    text-decoration: none;
+  }
+#findPassword {
+    margin-top: 50px;
+    position: absolute;
+    bottom: 30px;
+    color: rgb(0, 0, 117);
+    font-size: 13px;
+    cursor: pointer;
 }
