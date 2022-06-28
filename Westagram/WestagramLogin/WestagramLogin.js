@@ -1,6 +1,6 @@
 const idInput = document.getElementById('idInput');
 const passwordInput = document.getElementById('passwordInput');
-const Button = document.getElementById('loginButton');
+const button = document.getElementById('loginButton');
 //const Link = document.querySelector("a");
 
 
@@ -10,11 +10,11 @@ passwordInput.addEventListener('keyup',() => {
     console.log(firstResult.length);
     console.log(secondResult);
     if(firstResult.length !== 0 && secondResult.length !== 0){
-        Button.style.backgroundColor = "blue";
-        Button.disabled = false;
+        button.style.backgroundColor = "blue";
+        button.disabled = false;
     }else {
-        Button.style.backgroundColor = "rgb(162, 224, 255)";
-        Button.disabled = true;
+        button.style.backgroundColor = "rgb(162, 224, 255)";
+        button.disabled = true;
     }
 })
 
@@ -24,11 +24,11 @@ idInput.addEventListener('keyup',() => {
     console.log(firstResult.length);
     console.log(secondResult);
     if(firstResult.length !== 0 && secondResult.length !== 0){
-        Button.style.backgroundColor = "blue";
-        Button.disabled = false;
+        button.style.backgroundColor = "blue";
+        button.disabled = false;
     }else {
-        Button.style.backgroundColor = "rgb(162, 224, 255)";
-        Button.disabled = true;
+        button.style.backgroundColor = "rgb(162, 224, 255)";
+        button.disabled = true;
     }
 })
 /*

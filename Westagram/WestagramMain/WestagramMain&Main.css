@@ -7,13 +7,13 @@ main {
 }
 #firstArticle {
     width: 470px;
-    height: 950px;
     border: solid 1px #c5c4c4;
     border-radius: 10px;
     margin-top: 50px;
     background-color: white;
     display: flex; 
     flex-direction: column;
+    margin-bottom: 50px;
 }
 #firstArticleFirstBox {
     display: flex;
@@ -45,6 +45,11 @@ main {
 #firstArticlesecondBoxUser {
     width: 100%;
 }
+#commentList {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
 #comment {
     position: relative;
 }
@@ -55,6 +60,7 @@ main {
     border: none;
     border-top: 1px solid gray;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 20px;
 }
 #commentButton {
@@ -62,12 +68,9 @@ main {
     top: 20px;
     right: 10px;
     background-color: white;
-    color: rgb(0, 157, 255);
+    color: rgb(162, 224, 255);
     border: none;
 }
-
-
-
 #mainRight {
     position: sticky;
     top: 100px;
@@ -96,7 +99,7 @@ main {
     display: flex;
     justify-content: space-between;
 }
-#suggestionFirstUser {
+.suggestionFirstUser {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,7 +109,7 @@ main {
     font-size: 12px;
     margin-right: 80px;
 }
-#suggestionFirstUser img {
+.suggestionFirstUser img {
     width: 40px;
     height: 40px;
     border: solid 1px #9c9c9c;
