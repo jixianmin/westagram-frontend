@@ -7,11 +7,13 @@ const button = document.getElementById('loginButton');
 passwordInput.addEventListener('keyup',() => {
     let firstResult = idInput.value;
     let secondResult = passwordInput.value;
-    console.log(firstResult.length);
-    console.log(secondResult);
-    if(firstResult.length !== 0 && secondResult.length !== 0){
+    let emailSearch = firstResult.indexOf("@");
+    console.log(typeof(firstResult));//결과 string
+    console.log(emailSearch);//결과 fales -1 true 0
+    if(emailSearch !== -1 && secondResult.length > 5){
         button.style.backgroundColor = "blue";
         button.disabled = false;
+        //console.log(typeof(secondResult));결과 string
     }else {
         button.style.backgroundColor = "rgb(162, 224, 255)";
         button.disabled = true;
@@ -21,9 +23,8 @@ passwordInput.addEventListener('keyup',() => {
 idInput.addEventListener('keyup',() => {
     let firstResult = idInput.value;
     let secondResult = passwordInput.value;
-    console.log(firstResult.length);
-    console.log(secondResult);
-    if(firstResult.length !== 0 && secondResult.length !== 0){
+    let emailSearch = firstResult.indexOf("@");
+    if(emailSearch !== -1 && secondResult.length > 5){
         button.style.backgroundColor = "blue";
         button.disabled = false;
     }else {

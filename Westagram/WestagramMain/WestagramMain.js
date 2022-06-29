@@ -23,3 +23,14 @@ Button.onclick = function(){
     newP.appendChild(txtnod);
     console.log(Result);
 }
+
+commentInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        let Result = commentInput.value;
+        let newP = document.createElement("p");
+        let txtnod = document.createTextNode(Result);
+        commentDiv.appendChild(newP);
+        newP.appendChild(txtnod);
+        console.log(Result);
+    }
+});
